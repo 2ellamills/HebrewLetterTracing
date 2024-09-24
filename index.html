@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק לימוד כתיבת אותיות עבריות</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: url('graphics/background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .game-container {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            padding: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        canvas {
+            border: 1px solid black;
+            background: url('graphics/canvas_background.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>משחק לימוד כתיבת אותיות עבריות</h1>
+        <nav>
+            <ul>
+                <li><a href="#">דף הבית</a></li>
+                <li><a href="#">אודות</a></li>
+                <li><a href="#">צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 משחק לימוד כתיבת אותיות עבריות. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
